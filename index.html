@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>D2Drone</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+	integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header id="home">
+		<nav class="navbar">
+			<div class="navbar-header">
+				<img src="assets/logo.png" alt="Logo do projeto" class="navbar-header__logo">
+				<button type="button" class="navbar-header__toggle">
+					<i class="fas fa-bars"></i> <!-- https://fontawesome.com/search -->
+				</button>
+			</div> <!-- navbar-header -->
+
+			<ul class="navbar-list">
+				<li>
+					<a href="#home" class="navbar-list__link">Home</a>
+				</li>
+				<li>
+					<a href="#sobre" class="navbar-list__link">Sobre Nós</a>
+				</li>
+				
+				<li>
+					<a href="#pacotes" class="navbar-list__link">Nosso Pacotes</a>
+				</li>
+				
+				<li>
+					<a href="#orcamento" class="navbar-list__link">Orçamentos</a>
+				</li>
+				<li>
+					<a href="#footer" class="navbar-list__link">Contatos</a>
+				</li>
+			</ul> <!--navbar-list-->
+
+			<ul class="navbar-icons">
+				<li>
+					<a href="http://www.instagram.com" target="_blank" class="navbar-icons__icon"></a>
+						<i class="fab fa-instagram"></i>
+				</li>
+				<li>
+					<a href="http://www.facebook.com" target="_blank" class="navbar-icons__icon"></a>
+						<i class="fab fa-facebook"></i>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/" target="_blank" class="navbar-icons__icon"></a>
+						<i class="fab fa-linkedin"></i>
+				</li>
+			</ul> <!--navbar-icons-->
+
+		</nav> <!-- navbar -->
+
+
+		<div class="hero">
+			<video src="assets/Helicoptero.mp4" autoplay muted loop class="hero__video"></video>
+			<div class="hero-texto">
+				<h1 class="hero-texto__titulo"><br>D2Drone <br><span class="hero-texto__titulo--linha-2">
+					Web Sites | Marketing Digital | Drones | Inteligência Artificial </span></h1>
+				<p class="hero-texto__descricao">Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo,
+						mas ninguém vê os tombis que eu levo!</p>
+				<a href="#" class="hero-texto__cta">Explore</a>
+			</div> <!--HeroTexto-->
+		</div> <!--Hero-->
+
+	</header> <!-- Home -->
+
+	<section id="sobre" class="sobre">
+		<h2 class="section__titulo">Sobre<span class="section__titulo--destaque"> Nós</span></h2>
+		<div class="sobre-c">
+			<img src="assets/mktdigital800x535.jpg" alt="Sobre nós" class="sobre-c__img">
+			<div class="sobre-texto">
+				<h3 class="sobre-texto__titulo">Uma nova maneira de fazer Publicidade e Propaganda</h3>
+				<p>Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu tomo, mas ninguém levo! Adem dos tratores não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu u est. Praesent
+					malesuada nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
+				<br>
+				<p>Si num tem leite o bota uma pinga aí cumpadi! Diuretics paradis num copo é motivis de denguis. Interagi no,	ursus quis, vehicula ac nisi. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+			</div>
+		</div> <!--sobre-c-->
+	</section>
+
+	<section id="diferenciais">	
+		<h2 class="section__titulo">Nossos <span class="section__titulo--destaque">Diferenciais</span></h2>
+		<div class="diferenciais">
+			<article class="diferencial">
+				<h3 class="diferencial__titulo diferencial__titulo--site">O melhor Resultado</h3>
+				<p class="diferencial__descricao">Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu
+					tomo, mas ninguém vê os tombis que eu levo!</p>
+			</article>
+			
+			<article class="diferencial">
+				<h3 class="diferencial__titulo diferencial__titulo--hora">O mais rápido</h3>
+				<p class="diferencial__descricao">Mussum Ipsum, cacilds vidis litro abertis. Todo mundo vê os porris que eu omo, as ninguém vê os tombis que eu levo!</p>
+			</article>
+			
+			<article class="diferencial">
+				<h3 class="diferencial__titulo diferencial__titulo--carteira">O melhor preço</h3>
+				<p class="diferencial__descricao">Mussum Ipsum, cacilds litro abertis. Todo mundo vê os porris que eu
+					tomo,
+					mas ninguém vê os tombis que eu levo!</p>
+			</article>
+		</div><!--diferenciais-->
+	</section> 
+
+	<section id="pacotes">
+		<h2 class="section__titulo">Nossos <span class="section__titulo--destaque">Pacotes</span></h2>
+		<div class="pacotes">
+			<article class="pacote">
+				<img src="assets/web.webp" alt="Sites Responsivos" class="pacote_web">
+				<div class="pacote__info">
+					<div class="info-header">
+						<h3 class="info-header__titulo">Web Sites</h3>
+						<p class="info-header__dias">20 dias</p>
+					</div><!--info-header-->
+					<p class="info-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, corporis autem! Autem, ea! Cupiditate magnam, mollitia earum eos aperiam dolor tenetur, culpa vel porro, debitis eveniet reprehenderit fuga veniam autem.</p>
+					<div class="info-footer">
+						<span>
+							<i class="fas fa-users"></i>
+						</span>
+						<p>a partir de R$3.500,00</p>
+					</div><!--info-footer-->
+				</div>
+			</article>
+
+			<article class="pacote">
+				<img src="assets/artificial-intelligence-800x535.jpg" alt="Sites Responsivos" class="pacote_web">
+				<div class="pacote__info">
+					<div class="info-header">
+						<h3 class="info-header__titulo">Marketing Digital</h3>
+						<p class="info-header__dias">Frequencia Combinada</p>
+					</div><!--info-header-->
+					<p class="info-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, corporis autem! Autem, ea! Cupiditate magnam, mollitia earum eos aperiam dolor tenetur, culpa vel porro, debitis eveniet reprehenderit fuga veniam autem.</p>
+					<div class="info-footer">
+						<span>
+							<i class="fas fa-users"></i>
+						</span>
+						<p>a partir de R$2.000,00</p>
+					</div><!--info-footer-->
+				</div>
+			</article>
+
+			<article class="pacote">
+				<img src="assets/DJI-Air-2S.png" alt="Sites Responsivos" class="pacote_web">
+				<div class="pacote__info">
+					<div class="info-header">
+						<h3 class="info-header__titulo">Drones</h3>
+						<p class="info-header__dias">2 horas</p>
+					</div><!--info-header-->
+					<p class="info-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, corporis autem! Autem, ea! Cupiditate magnam, mollitia earum eos aperiam dolor tenetur, culpa vel porro, debitis eveniet reprehenderit fuga veniam autem.</p>
+					<div class="info-footer">
+						<span>
+							<i class="fas fa-users"></i>
+						</span>
+						<p>a partir de R$ 500,00</p>
+					</div><!--info-footer-->
+				</div>
+			</article>
+
+			<article class="pacote">
+				<img src="assets/cerebr.jpg" alt="Sites Responsivos" class="pacote_web">
+				<div class="pacote__info">
+					<div class="info-header">
+						<h3 class="info-header__titulo">Inteligencia Artificial</h3>
+						<p class="info-header__dias">20 dias</p>
+					</div><!--info-header-->
+					<p class="info-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, corporis autem! Autem, ea! Cupiditate magnam, mollitia earum eos aperiam dolor tenetur, culpa vel porro, debitis eveniet reprehenderit fuga veniam autem.</p>
+					<div class="info-footer">
+						<span>
+							<i class="fas fa-users"></i>
+						</span>
+						<p>a partir de R$1.500,00</p>
+					</div><!--info-footer-->
+				</div>
+			</article>
+		</div><!--pacotes-->
+	</section> 
+
+	<section>
+		<div class="newsletter-c">
+			<div class="newsletter-info">
+				<h2 class="newsletter-info__titulo">Quer Receber Promoções e Ofertas Exclusivas?</h2>
+				<p class="newsletter-info__descricao">Cadastre-se para receber nossas newsletters</p>				
+			</div><!--newsletter-info-->
+			<form class="newsletter-form">
+				<input type="text" placeholder="Seu e-mail" class="newsletter-form__input">
+				<button type="submit" class="newsletter-form__submit">Assinar</button>
+			</form>
+		</div><!--newsletter-c-->
+	</section>
+
+	<section class="galeria" id="galeria">
+		<article class="galeria-item">
+			<img src="assets/photo_0.jpg" alt="Imagem propria de New York" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">New York, EUA</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_1.jpg" alt="Imagem propria de Las VEgas" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Las VEgas, EUA</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_2.jpg" alt="Imagem propria de Toronto" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Toronto, Canada</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_3.jpg" alt="Imagem propria de Salvador" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Salvador, Brasil</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_4.jpg" alt="Imagem propria de Camaçari" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Camaçari, Brasil</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_5.jpg" alt="Imagem propria de Washington" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Washington, EUA</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_6.jpg" alt="Imagem propria de Subauma" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Subauma, Brasil</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_7.jpg" alt="Imagem propria de Salvador" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Salvador, Brasil</h4>
+		</article>
+		<article class="galeria-item">
+			<img src="assets/photo_8.jpg" alt="Imagem propria Dragonfruit" class="galeria-item__thumb">
+			<h4 class="galeria-item__local">Dragonfruit</h4>
+		</article>
+
+	</section>
+
+	
+
+		<footer class="footer">
+
+
+			<ul class="footer-list">
+				<li class="footer-list__item">
+					<a href="#home" class="footer-list__link">Home</a>
+				</li>
+			</ul>
+			<ul class="footer-list">
+				<li class="footer-list__item">
+					<a href="#sobre" class="footer-list__link">Sobre Nós</a>
+				</li>				
+			</ul>
+			<ul class="footer-list">
+				<li class="footer-list__item">
+					<a href="#diferenciais" class="footer-list__link">Diferenciais</a>
+				</li>				
+			</ul>
+			<ul class="footer-list">
+				<li class="footer-list__item">
+					<a href="#pacotes" class="footer-list__link">Nossos Pacotes</a>
+				</li>			
+			</ul>
+			<ul class="footer-list" id="footer">
+				<li class="footer-list__item">
+					<a href="#orcamentos" class="footer-list__link">Orçamentos</a>
+				</li>				
+			</ul><!--footer-list-->
+
+
+			<ul class="footer-icons">
+				<li>
+					<a id="insta" href="https://www.instagram.com/drone_2d/" target="_blank" class="footer-icons__icon">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/" target="_blank" class="footer-icons__icon">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/dsantanaweb/" target="_blank" class="footer-icons__icon">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+			</ul><!--footer-icons-->
+			
+				
+			<P class="copyright">Copyright &copy; dsantana16dev <span class="date">2023</span> Todos os direitos resevados</P>
+
+		</footer>
+	
+	<script src="js/scripts.js"></script>
+</body>
+</html>
