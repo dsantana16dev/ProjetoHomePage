@@ -1,35 +1,39 @@
 const _gallery = [
 	{
-		img: "assets/photo_0.png",
-		description: "Conceição do Mato Dentro"
+		img: "assets/photo_0.jpg",
+		description: "0"
 	},
 	{
-		img: "assets/photo_1.png",
-		description: "Diamantina"
+		img: "assets/photo_1.jpg",
+		description: "1"
 	},
 	{
-		img: "assets/photo_2.png",
-		description: "Tiradentes"
+		img: "assets/photo_2.jpg",
+		description: "2"
 	},
 	{
-		img: "assets/photo_3.png",
-		description: "São Lourenço"
+		img: "assets/photo_3.jpg",
+		description: "3"
 	},
 	{
-		img: "assets/photo_4.png",
-		description: "Serro"
+		img: "assets/photo_4.jpg",
+		description: "4"
 	},
 	{
-		img: "assets/photo_5.png",
-		description: "São Tomé das Letras"
+		img: "assets/photo_5.jpg",
+		description: "5"
 	},
 	{
-		img: "assets/photo_6.png",
-		description: "Ipoema"
+		img: "assets/photo_6.jpg",
+		description: "6"
 	},
 	{
-		img: "assets/photo_7.png",
-		description: "Ouro Preto"
+		img: "assets/photo_7.jpg",
+		description: "7"
+	},
+	{
+		img: "assets/photo_8.jpg",
+		description: "8"
 	}
 ]
 
@@ -83,7 +87,11 @@ _elements.toggle.addEventListener("click", () => {
 });
 
 _elements.galleryItems.forEach(item => {
-
+	item.addEventListener("click", e => {
+		const id = getImageId(e.target);
+		updateModal(id);
+		_elements.modal.style.display = "flex";
+	});
 });
 
 _elements.sliderThumbsImage.forEach(img => {
@@ -91,7 +99,7 @@ _elements.sliderThumbsImage.forEach(img => {
 });
 
 _elements.closeModalBtn.addEventListener("click", () => {
-
+	_elements.modal.style.display = "none";
 });
 
 _elements.sliderNextButton.addEventListener("click", () => nextImage());
@@ -99,11 +107,13 @@ _elements.sliderNextButton.addEventListener("click", () => nextImage());
 _elements.sliderPrevButton.addEventListener("click", () => prevImage());
 
 const getImageId = (target) => {
-
+	const arrFromChildren = Arry.from(target.parentNode.children);
+	const id = arrFromChildren.indexOf(target);
+	return id
 }
 
 const updateModal = (imgId) => {
-
+	_elements.sliderImage.src = _gallery[imgId].img
 }
 
 const nextImage = () => {
